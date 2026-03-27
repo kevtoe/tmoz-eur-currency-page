@@ -8,12 +8,8 @@ import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 const CDN = "https://edge.sitecorecloud.io/travelmoney4b32-travelmoneya8ef-prode36c-b231/media/Project/public-web";
 const barcelonaImg = `${CDN}/shared/CurrencyPage/Ways-To-Exchange-Basic-Card-Imagery/Spain-Barcelona_245kb.png?h=482&iar=0&w=800&t=d16x9`;
 const positanoImg = `${CDN}/shared/Travel-Money-Card/TMOZ-Currency-Pass/Currency-Pass-Basic-Cards-200kb/EUR_CurrencyPass_Italy-Positano.jpeg?h=865&iar=0&w=1438&t=d16x9`;
-const euroImg = `${CDN}/shared/CurrencyPage/Repeating-Patterns/EUR-RepeatingPattern-Card_min_123kb.png?h=450&iar=0&w=800&t=d1x1`;
 const dubrovnikImg = `${CDN}/shared/CurrencyPage/Ways-To-Exchange-Basic-Card-Imagery/Croatia-Dubrovnik_158kb.png?h=361&iar=0&w=600&t=d16x9`;
-const shoppingImg = `${CDN}/tmoz/Manual-Migrated-Banners/France-guide-banner.jpg?h=450&iar=0&w=1920&t=d16x9`;
-const italyImg = `${CDN}/tmoz/Manual-Migrated-Banners/Italy-large-1920x450.jpg?h=450&iar=0&w=1920&t=d16x9`;
-const hiddenCostsImg = `${CDN}/tmoz/Manual-Migrated-Images/Ultimate-guide-to-europe.png?h=300&iar=0&w=700&t=d16x9`;
-const unicefImg = `${CDN}/tmoz/UNICEF.png?h=1080&iar=0&w=1920&t=d4x3`;
+
 const priceBeatImg = `${CDN}/tmoz/Sitemaps/TMOZ/cvp-tmg-price/TravelMoneyCVP_PriceBeatGuarantee.png?h=248&iar=0&w=414`;
 const cashInDestImg = `${CDN}/shared/CurrencyPage/Feature-Banner-Images/EUR_CashInDestination_142kb.png?h=500&iar=0&w=500&t=d4x3`;
 const deliveryImg = `${CDN}/tmoz/CD-Square-Transparent---Delivery_55kb.png?h=1050&iar=0&w=1050`;
@@ -146,12 +142,7 @@ function ConverterSection() {
           {/* Right: Best Place to Buy Euros */}
           <div className="flex-1 pt-0 lg:pt-[16px]">
             <h2 className="text-[28px] lg:text-[56px] leading-[1.15] text-[#222529] mb-[12px] lg:mb-[16px]" style={{ ...F1, fontWeight: 400 }}>Best Place to Buy Euros in Australia</h2>
-            <p className="text-[16px] leading-[24px] text-[#222529] mb-[20px]" style={F2}>Whether you're planning to stroll the streets of Paris, cruise the canals of Amsterdam, or explore the ruins of Rome, you'll need <strong>Euros (EUR)</strong> in your wallet. Travel Money Oz makes it simple — order online or visit one of 90+ stores across Australia. With competitive rates on <strong>AUD to EUR conversion</strong>, your travel money goes further.</p>
-            <h3 className="text-[24px] leading-[32px] text-[#222529] mb-[8px]" style={{ ...F1, fontWeight: 400 }}>Live AUD to EUR Exchange Rate Today</h3>
-            <p className="text-[16px] leading-[24px] text-[#222529] mb-[20px]" style={F2}>The <strong>AUD to EUR exchange rate</strong> shifts frequently with global market changes, so it's essential to check today's rate before exchanging your Australian Dollars. At Travel Money Oz, we update our <strong>real-time AUD to EUR rates</strong> so you always know exactly how much you'll get — no hidden fees, no surprises.</p>
-            <h3 className="text-[24px] leading-[32px] text-[#222529] mb-[8px]" style={{ ...F1, fontWeight: 400 }}>Where to Buy Euros Near Me</h3>
-            <p className="text-[16px] leading-[24px] text-[#222529] mb-[20px]" style={F2}>Searching for a <strong className="text-[#038712]">money exchange near you for Euros</strong>? Travel Money Oz has over <strong>90+ currency exchange locations across Australia</strong>, making it easy to buy <strong>Euros (EUR)</strong> in person. Whether you're looking for a <strong>Euro money changer near me</strong> or just want trusted <strong>currency exchange centre for Euros</strong>, we've got you covered.</p>
-            <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>With our <strong className="text-[#038712]">In Stock Promise</strong>, we'll always have Euros available in-store. On the rare occasion we don't? You'll receive <strong>$10 AUD off</strong> when you make a full deposit. Need cash quickly? Take advantage of our <strong>same-day service</strong>, with competitive rates and no hidden fees. So if you're preparing for Europe and wondering where to buy Euros near me, head to your nearest Travel Money Oz and travel with confidence — quick, simple, and stress-free.</p>
+            <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>Buy <strong>Euros (EUR)</strong> online or at 90+ <strong>Travel Money Oz</strong> stores across Australia. We offer competitive, real-time <strong>AUD to EUR exchange rates</strong> with no hidden fees — so you always know exactly what you're getting before you travel.</p>
           </div>
         </div>
       </div>
@@ -169,7 +160,7 @@ function BodyContent() {
           {/* 5a. Best Exchange Rate */}
           <section>
             <h2 className="text-[32px] leading-[40px] text-[#222529] mb-[16px]" style={{ ...F1, fontWeight: 400 }}>How to Get the Best AUD to EUR Exchange Rate</h2>
-            <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>The <strong>AUD to Euro exchange rate</strong> can have a big impact on your travel budget — especially if you're planning a Eurotrip across multiple countries. At <strong>Travel Money Oz</strong>, we offer competitive, real-time rates so you can get great value when you buy Euros in Australia. Use our <strong className="text-[#038712]">live Euro exchange rate tool</strong> to monitor market movements and lock in your EUR at the best time before your trip.</p>
+            <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>At <strong>Travel Money Oz</strong>, we offer competitive, real-time <strong>AUD to Euro exchange rates</strong> so you get great value when you buy Euros. Use our <strong className="text-[#038712]">live exchange rate tool</strong> to monitor the market and lock in your EUR at the right time.</p>
           </section>
 
           {/* 5b. Price Beat Guarantee */}
@@ -177,7 +168,7 @@ function BodyContent() {
             <img src={priceBeatImg} alt="Price Beat Guarantee" className="w-[100px] h-[60px] object-contain shrink-0 hidden md:block" />
             <div>
               <h3 className="text-[24px] leading-[32px] text-[#222529] mb-[8px]" style={{ ...F1, fontWeight: 400 }}>Lock In a Better Rate with Our Price Beat Guarantee</h3>
-              <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>Want even more for your Aussie dollars? Thanks to our <strong className="text-[#038712]">Price Beat Guarantee</strong>, if you find a better published rate for <strong>Euros in Australia</strong>, Travel Money Oz will <strong>beat it</strong>. It's our way of making sure you're not only getting Euros, but also getting them at the best available AUD to EUR rate. Just bring proof of the better rate when purchasing in-store, and we'll handle the rest</p>
+              <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>Found a better published rate for <strong>Euros in Australia</strong>? Our <strong className="text-[#038712]">Price Beat Guarantee</strong> means we'll <strong>beat it</strong>. Just bring proof of the rate when purchasing in-store.</p>
               <p className="text-[12px] text-[#6e757c] mt-[16px] italic" style={F2}>*Price Beat Guarantee applies to in-store EUR cash purchases only. Terms and conditions apply.</p>
             </div>
           </section>
@@ -187,7 +178,7 @@ function BodyContent() {
             <div className="w-full md:w-[50%]"><img src={cashInDestImg} alt="EUR Cash In Destination" className="w-full h-full min-h-[250px] object-cover" /></div>
             <div className="flex-1 flex flex-col justify-center gap-[24px] p-[24px] md:p-[40px]">
               <h2 className="text-[28px] lg:text-[56px] leading-[1.15] text-[#222529]" style={{ ...F1, fontWeight: 400 }}>Ready to Buy Euros</h2>
-              <p className="text-[16px] leading-[24px] text-[#4a5056]" style={F2}>Heading to Spain for tapas or Germany for Oktoberfest, having Euro cash in hand saves stress on arrival. You can order online and collect in-store, or buy directly from one of our 90+ branches.</p>
+              <p className="text-[16px] leading-[24px] text-[#4a5056]" style={F2}>Order online for delivery or collect from one of our 90+ stores Australia-wide.</p>
               <div className="flex flex-wrap gap-[12px]"><Btn>Find A Store Near You <Arrow color="white" /></Btn><Btn secondary>Order Online</Btn></div>
             </div>
           </section>
@@ -219,7 +210,7 @@ function BodyContent() {
           {/* 5e. Order Euros Online for Home Delivery */}
           <section>
             <h2 className="text-[32px] leading-[40px] text-[#222529] mb-[16px]" style={{ ...F1, fontWeight: 400 }}>Order Euros Online for Home Delivery</h2>
-            <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>Want to skip the queues and sort your travel money without leaving the house? <strong className="text-[#038712]">Ordering Euros (EUR) online for home delivery</strong> is the most convenient way to get prepared before your trip. Whether you're planning to splurge in Paris, shop in Milan, or wander through Lisbon, <strong>Travel Money Oz</strong> lets you lock in your <strong>AUD to Euro exchange rate</strong> and have your cash delivered straight to your door — safely and securely.</p>
+            <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}><strong className="text-[#038712]">Order Euros (EUR) online for home delivery</strong> and have your cash delivered straight to your door. Lock in your <strong>AUD to Euro exchange rate</strong> and skip the queues — safe, secure, and hassle-free.</p>
           </section>
 
           {/* 5f. In-Store Pickup */}
@@ -227,7 +218,7 @@ function BodyContent() {
             <img src={deliveryImg} alt="Delivery" className="w-[100px] h-[100px] object-contain shrink-0 hidden md:block" />
             <div>
               <h3 className="text-[24px] leading-[32px] text-[#222529] mb-[8px]" style={{ ...F1, fontWeight: 400 }}>Order Euros Online for In-Store Pickup</h3>
-              <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>Need your travel money sooner? You can also <strong className="text-[#038712]">order Euros online for pickup</strong> at one of over 90 <strong>Travel Money Oz</strong> stores across Australia. Select locations even offer <strong>same-day pickup</strong>, perfect for last-minute plans. Lock in today's <strong>AUD to EUR exchange rate</strong>, then collect your Euros at a time that suits you — no stress, no surprises.</p>
+              <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}><strong className="text-[#038712]">Order Euros online for pickup</strong> at 90+ <strong>Travel Money Oz</strong> stores, with <strong>same-day pickup</strong> available at select locations. Lock in today's <strong>AUD to EUR exchange rate</strong> and collect when it suits you.</p>
             </div>
           </section>
 
@@ -252,7 +243,7 @@ function BodyContent() {
           {/* 5h. Euro to AUD */}
           <section>
             <h2 className="text-[32px] leading-[40px] text-[#222529] mb-[16px]" style={{ ...F1, fontWeight: 400 }}>Euro to AUD – Convert Euros to Australian Dollars</h2>
-            <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>Got leftover Euros from your trip? Travel Money Oz makes it easy to <strong>convert Euro to AUD</strong> at great rates. Whether you're exchanging a handful of notes or converting a larger amount, we offer a fast, reliable way to turn your <strong>Euros to Australian Dollars</strong> — all with expert service at over 90 locations nationwide.</p>
+            <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>Got leftover Euros? <strong>Convert Euro to AUD</strong> at great rates across 90+ <strong>Travel Money Oz</strong> locations — fast, reliable service for turning your <strong>Euros to Australian Dollars</strong>.</p>
           </section>
 
           {/* 5i. Buy Back Bonus */}
@@ -260,76 +251,16 @@ function BodyContent() {
             <img src={buyBackImg} alt="Buy Back Bonus" className="w-[100px] h-[60px] object-contain shrink-0 hidden md:block" />
             <div>
               <h3 className="text-[24px] leading-[32px] text-[#222529] mb-[8px]" style={{ ...F1, fontWeight: 400 }}>Buy Back Bonus for Better EUR to AUD Value</h3>
-              <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>If you originally purchased your <strong>Euros</strong> from Travel Money Oz, you may qualify for our <strong className="text-[#038712]">Buy Back Bonus</strong>. Just bring in your receipt when you return, and we'll offer a boosted <strong>EUR to AUD</strong> rate — giving you extra value for your leftover travel money.</p>
+              <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>Bought your <strong>Euros</strong> from us? Bring your receipt and get a boosted <strong>EUR to AUD</strong> rate with our <strong className="text-[#038712]">Buy Back Bonus</strong> — extra value for your leftover travel money.</p>
             </div>
-          </section>
-
-          {/* 5j. UNICEF Feature Banner */}
-          <section className="bg-[#f8f9fa] rounded-[8px] flex flex-col-reverse md:flex-row overflow-hidden">
-            <div className="flex-1 flex flex-col justify-center gap-[24px] p-[24px] md:p-[40px]">
-              <h2 className="text-[28px] lg:text-[56px] leading-[1.15] text-[#222529]" style={{ ...F1, fontWeight: 400 }}>Small Change Big Difference Program</h2>
-              <p className="text-[16px] leading-[24px] text-[#4a5056]" style={F2}>Returned from your trip with leftover foreign coins? Change a life by donating them to our Small Change Big Difference program instore which goes to UNICEF to help children all around the world.</p>
-              <div><Btn>Donate foreign coins <Arrow color="white" /></Btn></div>
-            </div>
-            <div className="w-full md:w-[50%]"><img src={unicefImg} alt="UNICEF" className="w-full h-full min-h-[250px] object-cover" /></div>
-          </section>
-
-          {/* 5k. Holiday Budget Calculator (simplified) */}
-          <section>
-            <h2 className="text-[28px] lg:text-[56px] leading-[1.15] text-[#222529] mb-[24px]" style={{ ...F1, fontWeight: 400 }}>Holiday Budget Calculator</h2>
-            <p className="text-[16px] leading-[24px] text-[#4a5056] mb-[24px]" style={F2}>We know holiday budgeting can be a snooze fest, but it's important! Just pop in your trip details, and our clever tools will mix crowd-sourced Numbeo data with our exchange rates to show you how much to bring. Easy as!</p>
-            <div className="border border-[#dfe2e6] rounded-[8px] p-[32px] bg-[#ebf7ec] text-center"><p className="text-[16px] text-[#4a5056]" style={F2}>Interactive Holiday Budget Calculator -- 5 step planner (Travel Info, Food & Drinks, Shopping, Transport, Summary)</p></div>
-          </section>
-
-          {/* 5l. Travel savings tips */}
-          <section>
-            <h3 className="text-[24px] leading-[32px] text-[#222529] mb-[16px]" style={{ ...F1, fontWeight: 400 }}>How to Save Money for Your Next European Holiday</h3>
-            <p className="text-[16px] leading-[24px] text-[#222529] mb-[12px]" style={F2}>Want to explore Europe without overspending? Here are some practical tips to help you make the most of your trip:</p>
-            <ul className="list-disc ml-[24px] text-[16px] leading-[24px] text-[#222529] flex flex-col gap-[12px]" style={F2}>
-              <li>Travel during off-peak seasons (November to March). Flights and hotels are way cheaper, and you'll avoid the crowds. It's perfect for exploring Europe at your own pace, especially before summer madness kicks in.</li>
-              <li>Dining out? Skip the expensive tourist traps and go for street food or local favourites. Whether it's a quick sandwich in Berlin, a bowl of soup in Budapest, or a simple pastry in Lisbon, you can find delicious and affordable options everywhere.</li>
-              <li>Public transport is super affordable and efficient in Europe. Hop on a metro, local bus, or train—it's the best way to get around cities like Berlin, Barcelona, or Budapest without blowing your budget.</li>
-              <li>Free attractions? Absolutely! Take advantage of free attractions like city parks, historic squares. You can check out the Eiffel Tower gardens, stroll the Spanish Steps, and explore Prague's Old Town—all for zero cost but full of European charm.</li>
-              <li>Check to see if there are free museum days! You'll experience a lot of local culture without paying a cent.</li>
-              <li>Convert AUD to EUR with Travel Money Oz to get the best exchange rate and make your Euros go further on your trip.</li>
-            </ul>
           </section>
 
           {/* 5m. All about the Euro */}
           <section>
             <h2 className="text-[32px] leading-[40px] text-[#222529] mb-[16px]" style={{ ...F1, fontWeight: 400 }}>All about the Euro</h2>
             <h3 className="text-[24px] leading-[32px] text-[#222529] mb-[8px]" style={{ ...F1, fontWeight: 400 }}>What countries use the Euro currency?</h3>
-            <p className="text-[16px] leading-[24px] text-[#222529] mb-[8px]" style={F2}>You'll need to swap AUD to Euro when travelling to any of these countries:</p>
+            <p className="text-[16px] leading-[24px] text-[#222529] mb-[8px]" style={F2}>The Euro is used in 25 countries. You'll need to convert AUD to EUR when travelling to:</p>
             <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>Andorra, Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Kosovo, Latvia, Lithuania, Luxembourg, Malta, Monaco, Montenegro, the Netherlands, Portugal, San Marino, Slovakia, Slovenia, Spain, and Vatican City.</p>
-          </section>
-
-          {/* 5n. Euro coins image + notes/coins info + fun facts */}
-          <section className="flex flex-col lg:flex-row gap-[32px]">
-            <div className="lg:w-[50%]"><img src={euroImg} alt="EUR Repeating Pattern" className="w-full rounded-[8px] aspect-square object-cover" /></div>
-            <div className="lg:w-[50%]">
-              <h3 className="text-[24px] leading-[32px] text-[#222529] mb-[12px]" style={{ ...F1, fontWeight: 400 }}>Euro notes and coins</h3>
-              <ul className="list-disc ml-[24px] text-[16px] leading-[24px] text-[#222529] flex flex-col gap-[8px] mb-[24px]" style={F2}>
-                <li>Like the Australian Dollar, the Euro (€) is divided into 100 cents (c).</li>
-                <li>Euro coins come in 1c, 2c, 5c, 10c, 20c, 50c, €1, and €2 denominations. Euro notes are available in €5, €10, €20, €50, €100, €200, and €500 denominations</li>
-                <li>While there have been calls for introducing €1 and €2 banknotes, these aren't currently printed (fun fact: producing these would likely cost more than €1 per note!).</li>
-              </ul>
-              <h3 className="text-[24px] leading-[32px] text-[#222529] mb-[12px]" style={{ ...F1, fontWeight: 400 }}>Fun facts about Euro banknotes</h3>
-              <ul className="list-disc ml-[24px] text-[16px] leading-[24px] text-[#222529] flex flex-col gap-[8px]" style={F2}>
-                <li>Euro coins have a shared design on one side, but each country adds its own special touch on the other, featuring national symbols, landmarks, or historical figures that reflect its unique culture.</li>
-                <li>Euro banknotes feature architectural styles from different periods of European history, including Classical, Romanesque, Gothic, Renaissance, Baroque, and Modern architecture, but they do not depict specific buildings.</li>
-              </ul>
-            </div>
-          </section>
-
-          {/* 5o. Travel Money Trivia */}
-          <section>
-            <h3 className="text-[24px] leading-[32px] text-[#222529] mb-[12px]" style={{ ...F1, fontWeight: 400 }}>Travel Money Trivia</h3>
-            <ul className="list-disc ml-[24px] text-[16px] leading-[24px] text-[#222529] flex flex-col gap-[8px]" style={F2}>
-              <li>The Euro currency was introduced in 1999, though the notes and coins weren't physically issued until 2002. Croatia was the most recent country to adopt the Euro, having done so in 2023. Better late than never!</li>
-              <li>Euro notes are made from pure cotton fibre, which makes them more durable and gives them their unique texture.</li>
-              <li>Each Euro note has a distinctive colour and design that represents a different artistic period of European architecture. Very fancy indeed.</li>
-              <li>The reverse (tails) side of every Euro coin features a map of Europe and the coin's value. However, each country that uses the Euro has its own designs for the obverse (heads) side.</li>
-            </ul>
           </section>
 
           {/* 5p. FAQ Accordion */}
@@ -353,23 +284,7 @@ function BodyContent() {
             ))}
           </section>
 
-          {/* 5r. 3 Blog Cards */}
-          <section className="grid grid-cols-1 md:grid-cols-3 gap-[16px]">
-            {[
-              { img: hiddenCostsImg, title: "Avoid Hidden Extras in Europe", body: "We've put together a few tips to shine some light on the extras you may come across in Europe." },
-              { img: shoppingImg, title: "Best Shopping Spots in Europe", body: "We can tell you where to find the best destinations for shopping in Europe." },
-              { img: italyImg, title: "How Much Money Do I Need To Travel Europe?", body: "Let's take a look at a few examples of different kinds of holidays you could have in Europe" },
-            ].map(c => (
-              <div key={c.title} className="bg-[#f8f9fa] rounded-[8px] overflow-hidden flex flex-col">
-                <img src={c.img} alt={c.title} className="w-full h-[180px] object-cover" />
-                <div className="p-[24px] flex-1 flex flex-col">
-                  <h3 className="text-[20px] leading-[28px] text-[#222529] mb-[12px]" style={{ ...F1, fontWeight: 400 }}>{c.title}</h3>
-                  <p className="text-[14px] leading-[20px] text-[#4a5056] flex-1" style={F2}>{c.body}</p>
-                  <div className="mt-[24px]"><TxtLink>Learn More</TxtLink></div>
-                </div>
-              </div>
-            ))}
-          </section>
+
         </div>
       </div>
     </div>
@@ -471,7 +386,6 @@ function Footer() {
         {/* Copyright */}
         <div className="border-t border-white/20 pt-[24px]">
           <p className="text-[12px] leading-[18px] text-white/85" style={F2}>© Travel Money Oz ABN 46 121 451 723. Proudly part of the Flight Centre Travel Group Limited.</p>
-          <p className="text-[12px] leading-[18px] text-white/85 mt-[16px]" style={F2}>*Holiday Budget Calculator uses data from Numbeo's Cost of Living Comparison Service, the world's largest database of user-contributed data about countries worldwide. The service is not designed to replace professional personal financial advice; consider whether the suggestions are appropriate for you.</p>
           <p className="text-[12px] leading-[18px] text-white/85 mt-[16px]" style={F2}>Mastercard Prepaid Management Services Australia Pty Ltd (ABN 47 145 452 044, AFSL 386 837) arranges for the issue of the Currency Pass in conjunction with the issuer, EML Payment Solutions Limited ('EML') ABN 30 131 436 532, AFSL 404131. You should consider the Product Disclosure Statement for the relevant product available at Travel Money Oz's website and the Target Market Determination before deciding to acquire the product. Any advice does not take into account your personal needs, financial circumstances or objectives and you should consider if it is appropriate for you. Mastercard and the circles design are registered trademarks of Mastercard International Incorporated.</p>
           <p className="text-[12px] leading-[18px] text-white/85 mt-[16px]" style={F2}>Credit or debit card fees may apply to online transactions, see online ordering terms and conditions.</p>
         </div>
