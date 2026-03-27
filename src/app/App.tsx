@@ -116,31 +116,73 @@ function HeroTitle() {
 /* ═══════ 4. CONVERTER + HERO TEXT (green bg) ═══════ */
 function ConverterSection() {
   const [tab, setTab] = useState<"cash"|"card">("cash");
-  const [pay, setPay] = useState("2000");
+  const [pay, setPay] = useState("5000");
   const rate = tab === "cash" ? 0.5921 : 0.5745;
-  const get = (parseFloat(pay) * rate).toFixed(2);
+  const numPay = parseFloat(pay) || 0;
+  const get = (numPay * rate).toFixed(2);
+  const presets = [500, 1000, 2000, 5000];
 
   return (
     <div className="bg-[#ebf7ec] w-full">
       <div className="max-w-[1600px] mx-auto px-[16px] md:px-[32px] lg:px-[64px] py-[48px] lg:py-[64px]">
         <div className="flex flex-col lg:flex-row gap-[32px] items-start">
           {/* Converter Card */}
-          <div className="bg-white rounded-[8px] border border-[#cfd4d9] w-full lg:w-[416px] shrink-0 p-[24px]">
-            <h3 className="text-[24px] leading-[32px] mb-[24px] text-[#222529]" style={{ ...F1, fontWeight: 400 }}>Convert Currency</h3>
-            <div className="bg-[#ebf7ec] rounded-[32px] p-[4px] flex mb-[24px]">
-              {(["cash","card"] as const).map(t => (
-                <button key={t} onClick={() => setTab(t)} className={`flex-1 flex items-center justify-center gap-[8px] py-[12px] rounded-[24px] font-[600] text-[16px] text-[#222529] cursor-pointer transition-colors ${tab === t ? "bg-[#9ad7a1]" : ""}`} style={F2}>
-                  {t === "cash" ? "Cash" : "Card"}
-                </button>
-              ))}
+          <div className="bg-white rounded-[16px] shadow-lg w-full lg:w-[460px] shrink-0 overflow-hidden">
+            {/* Green Header */}
+            <div className="bg-[#3D6B35] px-[24px] pt-[24px] pb-[28px]">
+              <div className="flex items-center justify-between mb-[20px]">
+                <h3 className="text-[22px] leading-[28px] text-white italic" style={{ ...F1, fontWeight: 700 }}>Convert Currency</h3>
+                <div className="bg-[#5a8a52] rounded-[32px] p-[3px] flex">
+                  {(["cash","card"] as const).map(t => (
+                    <button key={t} onClick={() => setTab(t)} className={`px-[18px] py-[8px] rounded-[24px] font-[600] text-[14px] cursor-pointer transition-colors ${tab === t ? "bg-white text-[#3D6B35]" : "text-white/80 hover:text-white"}`} style={F2}>
+                      {t === "cash" ? "Cash" : "Card"}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <p className="text-white/70 text-[14px] mb-[4px]" style={F2}>You get</p>
+              <div className="flex items-baseline gap-[8px] mb-[12px]">
+                <span className="text-white text-[48px] leading-[1]" style={{ ...F1, fontWeight: 700 }}>{isNaN(parseFloat(get)) ? "0.00" : parseFloat(get).toLocaleString("en-AU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                <span className="text-white/80 text-[22px]" style={{ ...F1, fontWeight: 600 }}>EUR</span>
+              </div>
+              <span className="inline-block bg-white/15 text-white/90 text-[13px] px-[12px] py-[5px] rounded-[20px]" style={F2}>1 AUD = {rate.toFixed(4)} EUR</span>
             </div>
-            <div className="flex flex-col gap-[24px]">
-              <div><label className="font-[600] text-[16px] text-[#222529] block mb-[8px]" style={F2}>Choose Currency</label><div className="border border-[#8c939a] rounded-[10px] p-[12px] flex items-center"><span className="w-[24px] h-[24px] rounded-full bg-[#0052B4] flex items-center justify-center text-[8px] text-[#FFDA44] mr-[12px]">EU</span><span className="flex-1 text-[14px]" style={F2}>EUR (Euro)</span><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1.5l5 5 5-5" stroke="#222529" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></div></div>
-              <div><label className="font-[600] text-[16px] text-[#222529] block mb-[8px]" style={F2}>You pay AUD</label><input type="text" value={pay} onChange={e => setPay(e.target.value)} className="w-full border border-[#8c939a] rounded-[10px] p-[12px] text-[14px] outline-none" style={F2} /></div>
-              <div><label className="font-[600] text-[16px] text-[#222529] block mb-[8px]" style={F2}>You get EUR</label><p className="text-[14px] text-[#6e757c] mb-[8px]" style={F2}>1 AUD = {rate} EUR</p><input type="text" readOnly value={isNaN(parseFloat(get)) ? "0.00" : get} className="w-full border border-[#8c939a] rounded-[10px] p-[12px] text-[14px] outline-none bg-white" style={F2} /></div>
-              <Btn>Buy online <Arrow color="white" /></Btn>
+
+            {/* White Body */}
+            <div className="px-[24px] py-[24px] flex flex-col gap-[20px]">
+              <div>
+                <label className="font-[600] text-[13px] text-[#6e757c] tracking-[0.5px] uppercase block mb-[8px]" style={F2}>Convert to</label>
+                <div className="border border-[#cfd4d9] rounded-[10px] p-[14px] flex items-center cursor-pointer hover:border-[#8c939a] transition-colors">
+                  <span className="w-[24px] h-[24px] rounded-full bg-[#0052B4] flex items-center justify-center text-[8px] text-[#FFDA44] mr-[12px]">EU</span>
+                  <span className="text-[16px] font-[700] text-[#222529] mr-[6px]" style={F2}>EUR</span>
+                  <span className="flex-1 text-[16px] text-[#8c939a]" style={F2}>Euro</span>
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1.5l5 5 5-5" stroke="#8c939a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </div>
+              </div>
+              <div>
+                <label className="font-[600] text-[13px] text-[#6e757c] tracking-[0.5px] uppercase block mb-[8px]" style={F2}>You pay (AUD)</label>
+                <div className="border border-[#cfd4d9] rounded-[10px] px-[14px] py-[14px] flex items-center focus-within:border-[#3D6B35] transition-colors">
+                  <span className="text-[#8c939a] text-[20px] mr-[8px]" style={F2}>$</span>
+                  <input type="text" value={pay} onChange={e => setPay(e.target.value)} className="flex-1 text-[20px] font-[700] text-[#222529] outline-none bg-transparent" style={F2} />
+                </div>
+              </div>
+              <div className="grid grid-cols-4 gap-[8px]">
+                {presets.map(p => (
+                  <button
+                    key={p}
+                    onClick={() => setPay(String(p))}
+                    className={`py-[10px] rounded-[10px] text-[14px] font-[600] cursor-pointer transition-colors border ${numPay === p ? "border-[#3D6B35] bg-[#ebf7ec] text-[#3D6B35]" : "border-[#cfd4d9] text-[#4a5056] hover:border-[#8c939a]"}`}
+                    style={F2}
+                  >
+                    ${p.toLocaleString()}
+                  </button>
+                ))}
+              </div>
+              <button onClick={() => {}} className="w-full flex items-center justify-center gap-[10px] px-[24px] py-[16px] rounded-[32px] bg-[#3D6B35] text-white font-[700] text-[16px] cursor-pointer hover:bg-[#2f5429] transition-colors" style={F2}>
+                Buy online <Arrow color="white" />
+              </button>
+              <p className="text-[14px] text-[#8c939a] text-center" style={F2}>*Online rates not available in store.</p>
             </div>
-            <p className="text-[14px] text-[#4a5056] mt-[24px]" style={F2}>*Online rates not available in store.</p>
           </div>
 
           {/* Right: Best Place to Buy Euros */}
