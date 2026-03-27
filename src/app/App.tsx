@@ -142,7 +142,7 @@ function ConverterSection() {
           {/* Right: Best Place to Buy Euros */}
           <div className="flex-1 pt-0 lg:pt-[16px]">
             <h2 className="text-[28px] lg:text-[56px] leading-[1.15] text-[#222529] mb-[12px] lg:mb-[16px]" style={{ ...F1, fontWeight: 400 }}>Best Place to Buy Euros in Australia</h2>
-            <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>Buy <strong>Euros (EUR)</strong> online or at 90+ <strong>Travel Money Oz</strong> stores across Australia. We offer competitive, real-time <strong>AUD to EUR exchange rates</strong> with no hidden fees — so you always know exactly what you're getting before you travel.</p>
+            <p className="text-[16px] leading-[24px] text-[#222529]" style={F2}>Nikita is the best.</p>
           </div>
         </div>
       </div>
