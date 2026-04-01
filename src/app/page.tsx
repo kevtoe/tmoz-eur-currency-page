@@ -5,6 +5,7 @@ import { ConverterSection } from "./components/ConverterSection";
 import { BodyContent } from "./components/BodyContent";
 import { TrustpilotSection } from "./components/TrustpilotSection";
 import { Footer } from "./components/Footer";
+import { StickyMobileCTA } from "./components/StickyMobileCTA";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <BodyContent />
       <TrustpilotSection />
       <Footer />
+      <StickyMobileCTA />
     </div>
   );
 }
